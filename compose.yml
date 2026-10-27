@@ -1,0 +1,16 @@
+# One backend, configured the way a generated app arrives: client class creation
+# on, no class-level permissions set, no per-row permissions written.
+services:
+  mongo:
+    image: mongo:7
+    command: ["--quiet"]
+  parse:
+    image: parseplatform/parse-server:7.4.0
+    depends_on: [mongo]
+    ports: ["1339:1337"]
+    environment:
+      PARSE_SERVER_APPLICATION_ID: demo-app
+      PARSE_SERVER_MASTER_KEY: demo-master-key
+      PARSE_SERVER_DATABASE_URI: mongodb://mongo:27017/dev
+      PARSE_SERVER_ALLOW_CLIENT_CLASS_CREATION: "${PARSE_SERVER_ALLOW_CLIENT_CLASS_CREATION:-true}"
+      PARSE_SERVER_MASTER_KEY_IPS: "0.0.0.0/0,::/0"
