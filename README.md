@@ -1,11 +1,15 @@
 # audit-lab
 
+[![Deploy on Back4app](https://img.shields.io/badge/Deploy%20on-Back4app-1568B8?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTEyIDJMMiA3djEwbDEwIDUgMTAtNVY3eiIvPjwvc3ZnPg==)](https://www.back4app.com/signup?utm_source=github&utm_medium=repo&utm_campaign=audit-lab)
+
 You cannot search for the name of a thing you have never heard of. This is that
 list of names, turned into a script that asks the questions against a running
 backend and reports what it was able to do.
 
 The auditor holds nothing but the **app id that ships inside every front-end
 bundle**. Every check is performed, not inferred.
+
+> **Read the article:** [How to Audit Your Backend's Security With Only the App ID: Nine Checks and a Script](https://www.back4app.com/blog/audit-backend-security-with-app-id?utm_source=github&utm_medium=repo&utm_campaign=audit-lab)
 
 ## Run it
 
